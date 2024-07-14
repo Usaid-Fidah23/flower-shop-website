@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter";
+}
+
+.banner {
+    width: auto;
+    height: 850px;
+    background-color: rgba(229, 84, 115, 0.1);
+    display: flex;
+    gap: 100px;
+}
+
+.banner-img {
+    height: 94.12%;
+    width: 33.07%;
+    margin-top: 50px;
+    margin-right: 240px;
+}
+
+.banner-text {
+    margin-top: 197px;
+    margin-left: 240px;
+
+}
+
+.banner-text h1 {
+    color: rgb(39, 39, 39);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.banner-text p {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+}
+.banner-text button{
+    border-radius: 8px;
+    background: rgb(229, 84, 115);
+    color: rgb(255, 255, 255);
+    padding: 20px 43px;
+    margin-top: 30px;
+    border: none;
+}
+/* responsive for small device */
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner-img{
+        height: 40vh;
+        width: 50vw;
+        margin-left: 30px;
+    }
+    .banner-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .banner-text{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .banner-text h1{
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    
+    
+}
